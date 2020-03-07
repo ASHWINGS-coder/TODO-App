@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            whats up with you today
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1>
+            Hey  Whats your Plans Today?
+        </h1>
+        <!-- form to take todo as input  -->
+        <form action="/todolist" method="POST">
+          
+        <input id="plan" name="plan" type="text" placeholder="whats the plan ..." required>
+        <br>
+        <input id="duedate" type="date"  name="duedate" required>
+        <br>
+        <br>
+        <label for="work" >
+            Dude Select one among these
+        </label>
+        <br>
+        <!-- using option to provide select from drop down -->
+        <select id="work" name="work">
+            <option value="personal">Personal</option>
+            <option value="official">Offical</option>
+            <option value="school">School</option>
+        </select>
+        <br>
+        <button type="submit" id="heybtn">
+            Add this POA dude
+        </button>
+       <!-- using ejs to ad todo which is taken as input  -->
+    </form>
+        <div id="ablock">
+            <% for(let i of poa) { %>
+                <li id="eachblock">
+              <p>
+                  <%= i.plan %>
+              </p>
+              <p>
+                <%= i.duedate %>
+            </p>
+            <p>
+                <%= i.work %>
+            </p>
+            <a href="/delete-todo/?id=<%=i._id %>">
+            <button type="submit" id="done">Done</button>
+            </a>
+        </li>
+                 <%}%>
+               
+        </div>
+    </body>
+    <!-- <script type="text/javascript" src="/js/home.js">    -->
+        <script>
+            // providing alert when a specific task is performed 
+     document.getElementById("heybtn").onclick = function done()
+ {
+     alert("Good that you are keeping yourself busy , hope you will complete the work with in the expected deadline :) ")
+ } 
+
+ document.getElementById("done").onclick = function (){
+    alert("Congrats dude you have completed the task :) ")
+ }
+    </script>
+</html>

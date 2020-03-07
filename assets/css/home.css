@@ -1,0 +1,63 @@
+body{   
+    margin-top:100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background: url(https://png.pngtree.com/back_origin_pic/04/61/61/7f3cff6369c29a6cd75b7fbc2c984868.jpg)
+    no-repeat no-repeat center fixed;
+    background-size: cover;
+}
+
+button{
+   background-color: rgb(102, 188, 223);
+   border:2px solid black;
+}
+
+input {
+    background-color: rgb(102, 188, 223);
+    border:2px solid black; 
+}
+
+#plan{
+    width:300px;
+    height:30px;
+    padding:10px;
+    margin:10px;
+}
+#duedate{
+    width:300px;
+    height:30px;
+    padding:10px;
+}
+
+#heybtn{
+    margin:10px ;
+}
+
+ #ablock{
+    color: black;
+    font-family: fantasy;
+    font-weight: 700;
+    width: 10%;
+    height: auto;
+    margin-left: 45%;
+    border:1px solid black;
+} 
+
+ li{
+    list-style: none;
+}
+
+#eachblock{
+    border:1px solid black;
+    padding:10px;
+    margin: 10px;
+}
+#eachblock button{
+    border:1px solid gainsboro;
+    border-radius: 50%;
+    background-color: darkcyan;
+    color: ghostwhite;
+}

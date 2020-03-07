@@ -1,0 +1,23 @@
+<html>
+    <head>
+     <!-- Dymamically passing title -->
+<title>
+    <%= title %> 
+</title>
+<link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1>
+            Hey Whats Your Name
+        </h1>
+<!-- form to take name as input and post which will be directed  to todo list -->
+        <form action="takenameasinput" method="POST">
+        <input type="text" name="name" placeholder="Enter Your Name :)" required>
+        <button type="submit" id="yup">
+            Yup :)
+        </button>
+        </form>
+    </body>
+    <script type="text/javascript" src="/js/home.js">
+       </script>
+</html>
